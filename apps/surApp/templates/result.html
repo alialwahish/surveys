@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>surveys</title>
+</head>
+<body>
+    <p id="header">Thanks for submitting .. {{i}} times</p>
+    <div>
+        <h2>Submitted Information:</h2>
+        <p>Name: {{name}}</p>
+        <p>Dojo Location: {{dojoName}}</p>
+        <p>Favorite: {{favLang}}</p>
+        <p>Comment: {{comment}}</p>
+        <a href="/"><button>Go Back</button></a>
+    </div>
+</body>
+</html>
